@@ -1,0 +1,197 @@
+{
+  "name": "ProtoFramework",
+  "tree": {
+    "$className": "DataModel",
+
+    "ReplicatedStorage": {
+      "Assets": {
+        "$className": "Folder"
+      },
+
+      "Shared": {
+        "$path": "src/Shared"
+      },
+
+      "ProtoUI.story": {
+        "$path": "src/Proto/ProtoUIStory.luau"
+      },
+
+      "Proto": {
+        "$path": "src/Proto/Proto.luau",
+
+        "ProtoClasses": {
+          "$path": "src/Proto/ProtoClasses.luau"
+        },
+
+        "ProtoNetwork": {
+          "$path": "src/Proto/ProtoNetwork.luau"
+        },
+
+        "ProtoPlayerUtil": {
+          "$path": "src/Proto/ProtoPlayerUtil.luau"
+        },
+
+        "ProtoDeclarative": {
+          "$path": "src/Proto/ProtoDeclarative.luau"
+        },
+
+        "ProtoParallel": {
+          "$path": "src/Proto/ProtoParallel.luau"
+        },
+
+        "ProtoValues": {
+          "$path": "src/Proto/ProtoValues.luau"
+        },
+
+        "ProtoWorker": {
+          "$path": "src/Proto/ProtoClasses/ProtoWorker.luau"
+        },
+
+        "ProtoObject": {
+          "$path": "src/Proto/ProtoClasses/ProtoObject.luau"
+        },
+
+        "ProtoTemplate": {
+          "$path": "src/Proto/ProtoClasses/ProtoTemplate.luau"
+        },
+
+        "ProtoState": {
+          "$path": "src/Proto/ProtoClasses/ProtoState.luau"
+        }
+      },
+
+      "CharacterClasses": {
+        "$className": "Folder",
+
+        "Client": {
+          "$className": "Folder",
+
+          "AllCharacters_Client": {
+            "$className": "Configuration",
+
+            "$properties": {
+              "Tags": ["ProtoTemplate"]
+            }
+          },
+
+          "OtherCharacters_Client": {
+            "$className": "Configuration",
+
+            "$properties": {
+              "Tags": ["ProtoTemplate"]
+            }
+          },
+
+          "LocalCharacter_Client": {
+            "$className": "Configuration",
+
+            "$properties": {
+              "Tags": ["ProtoTemplate"]
+            }
+          }
+        },
+
+        "Shared": {
+          "$className": "Folder",
+
+          "AllCharacters_Shared": {
+            "$className": "Configuration",
+
+            "$properties": {
+              "Tags": ["ProtoTemplate"]
+            }
+          }
+        }
+      },
+
+      
+      "PlayerClasses": {
+        "$className": "Folder",
+
+        "Client": {
+          "$className": "Folder",
+
+          "AllPlayers_Client": {
+            "$className": "Configuration",
+
+            "$properties": {
+              "Tags": ["ProtoTemplate"]
+            }
+          },
+
+          "OtherPlayers_Client": {
+            "$className": "Configuration",
+
+            "$properties": {
+              "Tags": ["ProtoTemplate"]
+            }
+          },
+
+          "LocalPlayer_Client": {
+            "$className": "Configuration",
+
+            "$properties": {
+              "Tags": ["ProtoTemplate"]
+            }
+          }
+        },
+
+        "Shared": {
+          "$className": "Folder",
+
+          "AllPlayers_Shared": {
+            "$className": "Configuration",
+
+            "$properties": {
+              "Tags": ["ProtoTemplate"]
+            }
+          }
+        }
+      }
+    },
+
+    "ServerScriptService": {
+      "Server": {
+        "$path": "src/Server"
+      },
+
+      "CharacterClasses": {
+        "$className": "Folder",
+
+        "AllCharacters_Server": {
+          "$className": "Configuration",
+
+          "$properties": {
+            "Tags": ["ProtoTemplate"]
+          }
+        }
+      },
+
+      "PlayerClasses": {
+        "$className": "Folder",
+
+        "AllPlayers_Server": {
+          "$className": "Configuration",
+
+          "$properties": {
+            "Tags": ["ProtoTemplate"]
+          }
+        }
+      }
+    },
+
+    "StarterPlayer": {
+      "StarterPlayerScripts": {
+        "Client": {
+          "$path": "src/Client"
+        }
+      }
+    },
+
+    "Players": {
+      "$properties": {
+        "CharacterAutoLoads": false
+      }
+    }
+  }
+}

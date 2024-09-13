@@ -1,0 +1,36 @@
+-touched/hitbox detector, can also be a touch detector component
+
+taken from slnova block coding since its so simple somehow
+example:
+*in a class for a zombie, self is a component of the class*
+
+Proto:touched(self, "bullet"):Connect(function()--when THIS zombie component touches ANY bullet, fire this event
+    self:destroy()
+end)
+
+
+
+
+
+
+
+-declarative feature for converting a table in to another table as a relation
+
+local convertedTable = Proto:convertTable(oldTable, function(key, value)
+    return newKey, newValue
+end
+
+always updates the values in convertedTable to be mutated versions of the values in oldTable
+
+
+
+
+-access variables across the network and be able to use them declaratively
+
+example:
+
+Proto:declare(self, function(self, Proto)
+    self.ui.Text = function(self, Proto)
+        return "Total Kills: "..Proto.network.StatsManager.totalKills
+    end
+end)
